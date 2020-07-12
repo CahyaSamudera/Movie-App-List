@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App List</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-tape text-primary"></i>My
+        <span class="text-primary">Movie</span>List
+      </h1>
+
+      <form id="movie-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="director">Director</label>
+          <input type="text" id="director" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="code">Code</label>
+          <input type="text" id="code" class="form-control" />
+        </div>
+        <input
+          type="submit"
+          value="Add Movie"
+          class="btn btn-primary btn-block"
+        />
+      </form>
+      <table class="table table-stiped mt-5">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Code</th>
+          </tr>
+        </thead>
+        <tbody id="movie-list"></tbody>
+      </table>
+      <footer>
+        <div class="text-center mt-5 pt-5 text-white">
+          <p>Made with ♥️ by Sucayono</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
